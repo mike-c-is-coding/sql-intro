@@ -1,4 +1,9 @@
 -- How many teams played in the league in each year?
+SELECT year, COUNT(*)
+FROM teams
+GROUP BY year
+ORDER BY year
+
 
 -- Expected result: 150 rows, ending with
 --
@@ -12,6 +17,5 @@
 -- | 2018 | 30       |
 -- | 2019 | 30       |
 -- | 2020 | 30       |
--- +------+----------+
-
+-- +------+----------
 
